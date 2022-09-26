@@ -1,8 +1,23 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 
-labels = "Python", "C++", "Ruby", "Java", "PHP", "Perl"
-sizes = [33, 52, 12, 17, 62, 48]
+data = [{
+    'name': 'Nick',
+    'jan_ir': 124,
+    'feb_ir': 129,
+    'mar_ir': 165,
+    },
+    {
+        ''
 
-plt.pie(sizes, labels=labels, autopct='%1.1f%%')
 
-plt.show()
+}]
+
+raw_data ={'names':['Ned', 'Ashley', 'Jon'],
+           'jan_ir':[123,147, 150],
+            'feb_ir':[122,144, 139],
+            'mar_ir':[121,141, 130]
+           }
+
+df = pd.DataFrame(raw_data, columns=['names', 'jan_ir', 'feb_ir', 'march_ir'])
+print(df)
